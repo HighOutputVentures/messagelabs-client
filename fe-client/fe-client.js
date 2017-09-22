@@ -16,7 +16,7 @@ iframe.onload = function onload() {
 
 document.body.insertBefore(iframe, document.body.firstChild);
 
-const authenticate = (username, password) => {
+const authenticate = function authenticate(username, password) {
   form.target = 'messagelabs-frame';
   form.action = 'https://mattermost-staging.identifi.com/api/v4/users/login';
   form.method = 'post';
