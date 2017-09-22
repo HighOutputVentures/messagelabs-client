@@ -4,11 +4,9 @@ var formInput = document.createElement('input');
 
 iframe.src = 'https://mattermost-staging.identifi.com';
 iframe.id = 'messagelabs-frame';
+iframe.class = 'messagelabs-frame';
 iframe.name = 'messagelabs-frame';
 iframe.style.resize = 'both';
-iframe.style.display = 'block';
-iframe.style.marginLeft = 'auto';
-iframe.style.marginRight = 'auto';
 iframe.onload = function onload() {
   iframe.src = iframe.src;
   this.onload = null;
