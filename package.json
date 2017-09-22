@@ -6,8 +6,8 @@
   "scripts": {
     "test": "ava",
     "lint": "eslint .",
-    "uglify-fe": "uglifyjs ./messagelabs-client.js -o messagelabs.min.js -c",
-    "build-fe": "babel fe-client.js --out-file messagelabs-client.js"
+    "uglify-fe": "uglifyjs fe-client/messagelabs-client.js -o fe-client/messagelabs.min.js -c",
+    "build-fe": "babel fe-client/fe-client.js --out-file fe-client/messagelabs-client.js"
   },
   "keywords": [
     "client",
